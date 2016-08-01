@@ -5,6 +5,8 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= favicon_link_tag 'image/Roq.png' %>
+  <script src="http://maps.googleapis.com/maps/api/js"></script>
 </head>
 <body>
   <header class="div-header">
@@ -16,8 +18,8 @@
                 </div>
                 <div class="inside-header-right">
                     <ul class="fb-en-ul fb-resp clearfix">
-                      <li class="fb-en"><a class="f-button" href="">f</a></li>
-                      <li class="fb-en"><a class="en-button" href="">en</a></li>
+                      <li class="fb-en"><%= link_to 'f', class: 'f-button', controller: 'home', action: 'index' %></li>
+                      <li class="fb-en"><%= link_to 'en', class: 'en-button', controller: 'home', action: 'index' %></li>
                     </ul>
 
                     <i id="nav_bar_toggle" class="fa fa-bars fa-2x visible-sm visible-xs pull-right menu-hamburger" aria-hidden="true"></i>
@@ -36,7 +38,6 @@
                       </nav>
                     </div>
                 </div>
-
           </div>
         </div>
       </header>
