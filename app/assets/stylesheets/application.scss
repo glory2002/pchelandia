@@ -1,5 +1,10 @@
+@import "style-autor.css";
+@import "style-book.css";
+@import "style-idea.css";
+@import "style-contact.css";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,800,700,300italic,300,400italic,600italic,700italic,800italic&subset=latin,cyrillic);
 @font-face{
   font-family: 'Sunday-Regular';
@@ -346,3 +351,4 @@ li > a:hover{
     .text-button{
       margin: 31px 80px 0px 80px;
     }
+  }
