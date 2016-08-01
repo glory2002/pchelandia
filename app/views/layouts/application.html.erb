@@ -7,7 +7,39 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header class="div-header">
+        <div class="container-fluid">
+          <div class="inside-header">
+            <div class="row">
+                <div class="inside-header-left">
+                  <%= image_tag("logo.png", id: "logo", alt: "logoto") %>
+                </div>
+                <div class="inside-header-right">
+                    <ul class="fb-en-ul fb-resp clearfix">
+                      <li class="fb-en"><a class="f-button" href="">f</a></li>
+                      <li class="fb-en"><a class="en-button" href="">en</a></li>
+                    </ul>
 
+                    <i id="nav_bar_toggle" class="fa fa-bars fa-2x visible-sm visible-xs pull-right menu-hamburger" aria-hidden="true"></i>
+
+                    <div class="all-menu-buttons clearfix">
+                      <nav>
+                        <div id="main_nav_bar" class="nav-bar hidden-xs hidden-sm bar-toggle">
+                          <ul class="links-to-floor clearfix">
+                            <li class="menu-tag nav-toggle-li"><a class="menu-text ascensorLink ascensorLink1" href="#">Начало</a></li>
+                            <li class="menu-tag nav-toggle-li"><a class="menu-text ascensorLink ascensorLink2" href="#">Книгата</a></li>
+                            <li class="menu-tag nav-toggle-li"><a class="menu-text ascensorLink ascensorLink3" href="#">Идея</a></li>
+                            <li class="menu-tag nav-toggle-li"><a class="menu-text ascensorLink ascensorLink4" href="#">Автор</a></li>
+                            <li class="menu-tag nav-toggle-li"><a class="menu-text ascensorLink ascensorLink5" href="#">Контакт</a></li>
+                          </ul>
+                        </div>
+                      </nav>
+                    </div>
+                </div>
+
+          </div>
+        </div>
+      </header>
 <%= yield %>
 
 </body>
