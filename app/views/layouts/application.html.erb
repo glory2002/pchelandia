@@ -2,11 +2,16 @@
 <html>
 <head>
   <title>Pchelandia</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag 'image/Roq.png' %>
-  <script src="http://maps.googleapis.com/maps/api/js"></script>
+  <%= javascript_include_tag "http://maps.googleapis.com/maps/api/js" %>
+  <%= stylesheet_link_tag "style-autor.css" %>
+  <%= stylesheet_link_tag "style-book.css" %>
+  <%= stylesheet_link_tag "style-idea.css" %>
+  <%= stylesheet_link_tag "style-show.css" %>
+  <%= stylesheet_link_tag "style-contact.css" %>
 </head>
 <body>
   <header class="div-header">
@@ -14,7 +19,7 @@
           <div class="inside-header">
             <div class="row">
                 <div class="inside-header-left">
-                  <%= image_tag("logo.png", id: "logo", alt: "logoto") %>
+                  <%= image_tag("logo.png", id: "logo", alt: "logo") %>
                 </div>
                 <div class="inside-header-right">
                     <ul class="fb-en-ul fb-resp clearfix">
